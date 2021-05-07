@@ -30,7 +30,6 @@ def set_record(record, domain, ttl, ip, headers):
         }]
     }
     update = requests.put(f'https://api.gandi.net/v5/livedns/domains/{domain}/records/{record}', headers=headers, json=data)
-    print(data)
 
 
 def main():
