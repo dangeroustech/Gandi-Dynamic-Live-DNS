@@ -17,3 +17,7 @@ _if you hate poetry then the only deps you need are:_
 
 - _requests_
 - _python-dotenv_
+
+### Env File Usage
+
+The `domain` must be the root (i.e. what you purchase from Gandi), any additional sub-records should be added in to the `record` portion. For example, the current `.env.example` file would be editing `dynamic.test.com`.
