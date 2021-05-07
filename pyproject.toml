@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "GandiDynamicLIVEDNS"
-version = "0.1.0"
+version = "1.0.0"
 description = "Gandi dynamic live dns"
 authors = ["Josh Jacobs <josh@joshjacobs.net>"]
 license = "GPL-3.0"
