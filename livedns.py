@@ -1,3 +1,4 @@
+import sys
 import requests
 import json
 from dotenv import dotenv_values
@@ -33,6 +34,9 @@ def set_record(record, domain, ttl, ip, headers):
 def main():
     # read the config from the .env file (but don't push them as env vars)
     config = dotenv_values(".env")
+    if not config:
+        print("Please create .env or rename .env.example to .env")
+        sys.exit(1)
     # common header to share with funcs
     headers = {
         "Authorization": f'Apikey {config["gandi_api_key"]}'
