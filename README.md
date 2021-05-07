@@ -11,7 +11,7 @@ Dynamically update an A record on Gandi's LiveDNS system to reflect the current 
 
 For Example:
 
-`*/15 * * * * python -m poetry run /path/to/script/livedns.py >/dev/null 2>&1`
+`*/15 * * * * python -m poetry run python /path/to/script/livedns.py >/dev/null 2>&1`
 
 _if you hate poetry then the only deps you need are:_
 
